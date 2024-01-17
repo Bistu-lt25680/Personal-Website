@@ -18,13 +18,14 @@ body {
 .time {
     position: relative;  
     text-align: center;
+    font-size: 100%;
 }
 
 button {
     border-radius: 50%;
-    height: 10%;
-    width: 5%;
-    margin:1% auto;
+    height: 10vw;
+    width: 10vw;
+    margin:1vw auto;
     display: block;
 }
 
@@ -44,7 +45,10 @@ button {
 
 @media screen and (max-width: 600px) {
     .logo {
-        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%; 
         height: auto;
     }
     .title{
@@ -52,11 +56,21 @@ button {
         height: auto;
     }
     
+    #playButton{
+        position: absolute;
+        left: 30%;
+    }
+
+    #stopButton{
+        position: absolute;
+        right: 30%;
+    }
+
     body {
         font-size: 16px;
     }
-    .footer{
-        font-size: 1%;
+    .time{
+        font-size: 70%;
     }
 }
 
