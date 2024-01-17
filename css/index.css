@@ -1,0 +1,27 @@
+.red {
+    color: red;
+}
+
+#playButton {
+    display: block;
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#stopButton {
+    display: block;
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
