@@ -6,45 +6,61 @@ body {
     font-size: 18px;
 }
 
+h1 {
+    font-size: 60px;
+    font-family: fantasy, Helvetica, sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.time {
+    position: relative;  
+    text-align: center;
+}
+
 button {
     padding: 10px 20px;
-}
-
-#playButton, #stopButton {
-    display: block;
-    font-size: 30px;
-    width: 200px;
+    border-radius: 50%;
     height: 100px;
-    margin: 10px auto;
+    width: 100px;
+    margin:10px auto;
+    display: block;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+#playButton {
+    background-color: rgb(199, 234, 199);
+    position: absolute;
+    top:17%;
+    left: 40%;
+}
+
+#stopButton {
+    background-color: rgb(199, 234, 199);
+    position: absolute;
+    top:17%;
+    right: 40%;
 }
 
 @media screen and (max-width: 600px) {
-    img {
-        width: 100%;
-        height: auto;
-    }
     body {
         font-size: 16px;
     }
 
-    button {
-        padding: 8px 16px;
-    }
-    #playButton {
-        width: 30%;
-        height: auto;
-    }
-    #stopButton {
-        width: 30%;
-        height: auto;
-    }
 }
 
-h1, .time {
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:4%;
+    font-size:140%;
+    background-color: rgb(199, 234, 199);
+    color: black;
     text-align: center;
+    font-family: fantasy, Helvetica, sans-serif;
 }
