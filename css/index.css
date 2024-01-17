@@ -2,28 +2,20 @@
     color: red;
 }
 
-#playButton {
-    display: block;
-    font-size: 30px;
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    top: 250px;
-    left: 0;
-    right: 0;
-    margin: auto;
+body {
+    font-size: 18px;
 }
 
-#stopButton {
+button {
+    padding: 10px 20px;
+}
+
+#playButton, #stopButton {
     display: block;
     font-size: 30px;
     width: 200px;
     height: 100px;
-    position: absolute;
-    top: 400px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin: 10px auto;
 }
 
 img {
@@ -36,4 +28,23 @@ img {
         width: 100%;
         height: auto;
     }
+    body {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+    #playButton {
+        width: 30%;
+        height: auto;
+    }
+    #stopButton {
+        width: 30%;
+        height: auto;
+    }
+}
+
+h1, .time {
+    text-align: center;
 }
