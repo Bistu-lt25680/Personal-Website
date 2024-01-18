@@ -4,18 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LiuTian</title>
-    <link href="css/index.css" rel="stylesheet" type="text/css" class="nav1"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="css/nav2.css" rel="stylesheet" type="text/css"/>
     <audio id="myAudio" src="music/laoda.mp3" autoplay></audio>
 </head>
 <body>
-    <div class="logo-block">
-        <img class="logo1" src="images/bistu.png" alt="BISTU Logo">
-        <img class="logo2" src="images/logo1.png" alt="BISTU Logo">
+    <div class="logo-block1">
+        <img class="logo1" src="images/bistulogo.png" alt="BISTU Logo">
+    </div>
+    
+    <div class="logo-block2">
+        <img class="logo2" src="images/bistulogo1.png" alt="BISTU Logo">
     </div>
     
     <div class="title-block">
     <img class="title" src="images/title.png">
     </div>
+
+    <div class="nav2">
+        <button class="nav2" onclick="toggleMenu()"></button>
+    </div>
+    <div id="menu" class="menu-closed">
+        <a href="index.html">HomePage</a>
+        <a href="PictureWall.html">PictureWall</a>
+    </div>
+
 
     <button id="playButton">
         <img src="images/music.png" style="width: 50%;height: auto;">
@@ -25,16 +38,9 @@
     </button>
     
 
-    <a href="https://www.bilibili.com/video/BV1pj411b7QZ/?spm_id_from=333.337.search-card.all.click&vd_source=03484a90f3b103e543fd1210fcdb2e06" target="_blank">
-        <img src="images/jijikobe.jpg" alt="Jijiboke" style="position: absolute; top:30%;left:0%; width: 30%;height: auto;">
-    </a>
-    
-    
-    <a href="https://www.bilibili.com/video/BV1pj411b7QZ/?spm_id_from=333.337.search-card.all.click&vd_source=03484a90f3b103e543fd1210fcdb2e06" target="_blank">
-        <img src="images/huonankobejpg.jpg" alt="Huonan Kobe" style="position: absolute;right:0%;top:30%;width:30%;height: auto;">
-    </a>
 
-    <script src="js/test.js"></script>
+    <script src="scripts/test.js"></script>
+
 
     <div class="footer">
         <div class="time" id="time"></div>

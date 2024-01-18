@@ -23,6 +23,15 @@ body {
     height: auto;
 }
 
+.nav2 {
+    position: fixed;
+    border: none;
+    top:1%;
+    right: 1%;
+    border-radius:none;
+}
+
+
 .time {
     position: relative;  
     text-align: center;
@@ -30,6 +39,13 @@ body {
 }
 
 button {
+    border-radius:0;
+    height: 10vw;
+    width: 10vw;
+    background-color: transparent;
+}
+
+CircleButton {
     border-radius: 50%;
     height: 10vw;
     width: 10vw;
@@ -42,7 +58,7 @@ button {
     position: absolute;
     width: 4vw;
     height: 4vw;
-    top:17%;
+    top:27%;
     left: 40%;
 }
 
@@ -51,18 +67,105 @@ button {
     position: absolute;
     width: 4vw;
     height: 4vw;
-    top:17%;
+    top:27%;
     right: 40%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:4%;
+    font-size:90%;
+    background-color: rgb(199, 234, 199);
+    color: black;
+    text-align: center;
+    font-family: fantasy, Helvetica, sans-serif;
+}
+
+.gallery {
+    position: relative;
+    top: 20vh;
+    width: 50vw;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  #prev {
+    background-image: url('../images/left-arrow1.png');
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    left: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    /* 其他样式 */
+  }
+  
+  #next {
+    background-image: url('../images/right-arrow1.png');
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    /* 其他样式 */
+  }
+  
+#placeholder {
+    max-width: 100%;
+    height: auto;
+  }
+
+.logo-block2 {
+    position: fixed;
+    left: 0;
+    bottom: 4%;
+    width: 100%;
+    height:4%;
+    background-color: rgb(213, 118, 145);
+}
+
+.logo2 {
+    position: relative;
+    left: 50%;
+    top:50%;
+    width: 8%; 
+    transform: translate(-50%, -50%);
+    height: auto;
 }
 
 @media screen and (max-width: 600px) {
     
-    .title{
+    .title-block{
         position: absolute;
-        top: 5%;
+        display: block;
+        top: 0%;
         width: 100%;
-        height: auto;
+        left:0%;
+        height: 10%;
         background-color: rgb(213, 118, 145);
+    }
+
+    .title {
+        position: absolute;
+        top: 50%;
+        right: 7vw;
+        width: 70%;
+        height: auto;
     }
 
     #playButton{
@@ -83,10 +186,10 @@ button {
         font-size: 16px;
     }
     .time{
-        font-size: 70%;
+        font-size: 110%;
     }
 
-    .logo-block {
+    .logo-block2 {
         position: fixed;
         left: 0;
         bottom: 4%;
@@ -103,24 +206,58 @@ button {
         position: relative;
         left: 50%;
         top: 50%;
-        width: 30%; 
+        width: 20%; 
         transform: translate(-50%, -50%);
         height: auto;
     }
 
+    .gallery {
+        position: relative;
+        top: 40vh;
+        width: 100%;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #placeholder {
+        position: absolute;
+        top: 70%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+    }
     
+    #prev {
+        background-image: url('../images/left-arrow.png');
+        background-color: transparent;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 10vw;
+        height: 10vw;
+        border: none;
+        left: 0%;
+        top:40vh;
+        transform: translate(0%, -100%);
+        /* 其他样式 */
+    }
+    
+    #next {
+        background-image: url('../images/right-arrow.png');
+        background-color: transparent;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 10vw;
+        height: 10vw;
+        border: none;
+        right: 0%;
+        top: 40vh;
+        transform: translate(0%, -100%);
+        /* 其他样式 */
+    }
+
 }
 
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height:4%;
-    font-size:140%;
-    background-color: rgb(199, 234, 199);
-    color: black;
-    text-align: center;
-    font-family: fantasy, Helvetica, sans-serif;
-}

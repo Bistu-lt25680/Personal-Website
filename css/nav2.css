@@ -1,0 +1,89 @@
+.nav2 {
+    background-image: url('../images/menu_logo.png');
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    border: none;
+    top: 1%;
+    right: 1%;
+    width:10vw;
+}
+
+#menu {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transition: width 0.5s ease;
+    background-color: rgb(167, 220, 183); /* 添加这一行 */
+}
+
+.menu-closed {
+    width: 0;
+    overflow: hidden;
+}
+
+.menu-open {
+    width: 30vw; /* 或者你想要的任何宽度 */
+}
+
+#menu a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+    text-decoration: none;
+    color: black;
+}
+
+#menu a:hover {
+    background-color: #ddd;
+    color:#ffffff
+}
+
+@media screen and (max-width: 600px) {
+    .nav2 {
+        background-image: url('../images/menu_logo.png');
+        background-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: fixed;
+        border: none;
+        top: 1%;
+        left: 1%;
+        width: 10vw;
+    }
+
+    #menu {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transition: width 0.5s ease;
+        background-color: rgb(167, 220, 183); /* 添加这一行 */
+    }
+    
+    .menu-closed {
+        width: 0;
+        overflow: hidden;
+    }
+    
+    .menu-open {
+        width: 30vw; /* 或者你想要的任何宽度 */
+    }
+    
+    #menu a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ffffff;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #menu a:hover {
+        background-color: #ddd;
+        color:#ffffff
+    }
+}
