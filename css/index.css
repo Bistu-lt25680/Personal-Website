@@ -45,17 +45,11 @@ button {
     background-color: transparent;
 }
 
-CircleButton {
-    border-radius: 50%;
-    height: 10vw;
-    width: 10vw;
-    margin:1vw auto;
-    display: block;
-}
 
 #playButton {
     background-color: rgb(199, 234, 199);
     position: absolute;
+    border-radius:50%;
     width: 4vw;
     height: 4vw;
     top:27%;
@@ -65,6 +59,7 @@ CircleButton {
 #stopButton {
     background-color: rgb(199, 234, 199);
     position: absolute;
+    border-radius:50%;
     width: 4vw;
     height: 4vw;
     top:27%;
