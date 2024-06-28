@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiuTian</title>
+    <link rel="stylesheet" type="text/css" href="/css/1.css">
+</head>
+
+<body>
+    <div class="nav">
+        <img class="nav-logo" src="imgs/bistulogo1.png" alt="BISTU Logo">
+    </div>
+
+    <div class="schoolmap">
+    <img class="school-map" id="school-map" src="/imgs/school.jpg" usemap="#schoolmap">
+    </div>
+
+    <div id="infoPanel" onclick="hideInfo()">
+        <div class="infoContent">
+            <h2 id="infoTitle"></h2>
+            <p id="infoText"></p>
+        </div>
+    </div>
+
+    <map name="schoolmap">
+        <area shape="rect" coords="700,410,770,482" alt="图书馆" onclick="showInfo('图书馆', '图书馆九月开放使用')" href="javascript:void(0)">
+        <area shape="rect" coords="832,448,881,494" alt="学生发展中心" onclick="showInfo('学生发展中心', '不知道写什么')" href="javascript:void(0)">
+        <area shape="rect" coords="910,447,968,493" alt="体育馆" onclick="showInfo('体育馆', '不知道写什么')" href="javascript:void(0)">
+        <area shape="poly" coords="564,562,585,556,586,535,553,533,530,553,531,553" alt="二食堂" onclick="showInfo('二食堂', '不知道写什么')" href="javascript:void(0)">
+        <area shape="poly" coords="860,587,860,600,912,600,914,650,926,650,926,588" alt="学一公寓A座" onclick="showInfo('学一公寓A座', '不知道写什么')" href="javascript:void(0)">
+        <area shape="circle" coords="991,368,25" alt="东门" onclick="showInfo('东门', '东门')" href="javascript:void(0)">
+    </map>
+
+    <div class="footer">
+        <div class="time" id="time"></div>   
+        <div class="logo-block2">
+            <img class="footer-logo" src="imgs/bistulogo1.png" alt="BISTU Logo">
+        </div>
+    </div>
+
+    <script src="scripts/showtime.js"></script>
+    <script src="scripts/Menu.js"></script>
+</body>
+
+</html>
